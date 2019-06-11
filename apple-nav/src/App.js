@@ -1,12 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NavWrapper from "./NavComponents/NavWrapper";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello Apple Navigation</h1>
-    </div>
+    <Router>
+      <div className="App">
+        <Route path = "/" component = {NavWrapper}/>
+      </div>
+    </Router>
   );
 }
 
